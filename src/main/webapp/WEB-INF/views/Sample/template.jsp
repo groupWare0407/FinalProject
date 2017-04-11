@@ -180,7 +180,7 @@
 							</a>
 							<ul class="site-menu-sub">
 								<li class="site-menu-item">
-									<a class="animsition-link" href="#">
+									<a class="animsition-link" href="">
 										<span class="site-menu-title">메뉴1</span>
 									</a>
 								</li>
