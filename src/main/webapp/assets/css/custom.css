@@ -1,0 +1,5 @@
+.page-login-v3 .page-content{width:500px}
+.page-login-v3 .page-content .panel{margin-bottom:0}
+@media(max-width: 480px){
+	.page-login-v3 .page-content{width:80%}
+}
