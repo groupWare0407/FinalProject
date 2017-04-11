@@ -2,8 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="">
-	
+<mapper namespace="config.mybatis.mapper.oracle.reboard">
+	<insert id="insertCommunity" parameterType="CommunityVO">
+		<selectKey keyProperty="comu_no" resultType="int" order="BEFORE">
+			select comu_seq.nextval from dual
+		</selectKey>
+		insert into comu(comu_no, comu_eno, comu_title, comu_regdate, 
+		comu_content, comu_count, comu_like, comu_originalfilename, 
+		comu_filename, comu_filesize)
+		values(#{comu_no}, #{comu_eno}, #{comu_title}, #{comu_regdate}, 
+		#{comu_content}, #{comu_count}, #{comu_like}, #{comu_originalfilename}, 
+		#{comu_filename}, #{comu_filesize});
+	</insert>
 </mapper>
 
 

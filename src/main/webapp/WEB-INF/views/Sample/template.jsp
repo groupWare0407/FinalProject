@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../../_inc/_header.jsp" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <body class="site-navbar-small ">
 	<!--[if lt IE 8]>
 	<p class="browserupgrade">현재 <strong>지원되지 않는</strong> 브라우저로 접속중입니다. 원활한 사이트이용을 위해 <a href="http://browsehappy.com/">최신 브라우저</a> 로 업그레이드 하세요!</p>
@@ -180,7 +181,7 @@
 							</a>
 							<ul class="site-menu-sub">
 								<li class="site-menu-item">
-									<a class="animsition-link" href="">
+									<a class="animsition-link" href='<c:url value="/community/write.do"/>'>
 										<span class="site-menu-title">메뉴1</span>
 									</a>
 								</li>
